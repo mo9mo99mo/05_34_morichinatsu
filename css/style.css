@@ -1,0 +1,128 @@
+@charset "utf-8";
+body{
+    font-size: 16px;
+    font-size: 1rem;
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+    color: #333;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 1.6rem;
+    margin-top: 8%;
+}
+main {
+    
+}
+section {
+    width: 96%;
+    max-width: 720px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 3%;
+    margin: 4% 0;
+}
+.form_1colmun {
+    margin-bottom: 3%;
+}
+.form_2colmun {
+    display: flex;
+    margin-bottom: 3%;
+}
+.form_input{
+    width: 80%;
+}
+.form_input input[type="text"]{
+}
+.form_input input[type="text"]{
+    height: 40px;
+    border-radius: 20px;
+    background-color: #efefef;
+    border: none;
+    padding-left: 1.8em;
+    width: 100%;
+    outline: none;
+}
+.form_input input[type="text"]:focus{
+    border: 1px solid #e60023;
+}
+.form_ttl {
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    padding: 0 1.5em 0.5em 1.0em;
+    margin-bottom: 3%;
+}
+.form_radio li{
+    margin-bottom: 2%;
+}
+.form_radio label{
+    position: relative;
+    top:4px;
+}
+.form_btn{
+    text-align: center;
+}
+.btn {
+    display: inline-block;
+    white-space: nowrap;
+    border-style: none;
+    background: #fff;
+    color: #666;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    padding: 0 16%;
+    letter-spacing: 0.1em;
+}
+.btn:visited{
+    background: #fff;
+    color: #666;
+}
+.btn:hover{
+    background: #e60023;
+    color: #fff;
+    transition:all 1.6s;
+}
+button.btn {
+    border-style: none;
+    background: #e60023;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    min-width: 200px;
+    line-height: 40px;
+    padding: 0 3%;
+    letter-spacing: 0.5em;
+}
+footer {
+    margin-bottom: 5%;
+    width: 100%;
+    max-width: 720px;
+    text-align: center;
+}
+
+/*kadai_read.php*/
+.fieldset {
+    width: 100%;
+}
+.list_result li{
+    margin-bottom: 3%;
+    padding: 1.5em 1.5em 0.5em 1.0em;
+}
+.list_result li + li{
+    border-top: 1px solid #eee;
+    
+}
+.caution {
+    color: red;
+    font-size: 0.6rem;
+}

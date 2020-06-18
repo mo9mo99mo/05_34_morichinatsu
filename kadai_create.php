@@ -3,6 +3,7 @@
 //exit();
 //データ受け取り
 $onamae = $_POST['onamae'];
+//$onamae = filter_input(INPUT_POST, 'onamae');
 $email = $_POST['email'];
 $pets = $_POST['pets'];
 

@@ -11,7 +11,7 @@ flock($file, LOCK_EX);
 //処理：ファイル書込、その後一行ずつ出力
 if ($file) {
     while ($line = fgets($file)) {
-        $str .= "<tr><td>{$line}</td></tr>";
+        $str .= "<li>{$line}</li>";
     }
 }
 
@@ -27,25 +27,27 @@ fclose($file);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>textファイル書き込み型todoリスト（一覧画面）</title>
+    <title>フォーム送信データリスト（一覧画面）</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
     <fieldset>
-        <legend>textファイル書き込み型todoリスト（一覧画面）</legend>
-        <a href="kadai_input.php">入力画面</a>
-        <table>
-            <thead>
-                <tr>
-                    <th><?= $str ?></th>
-                </tr>
+        <h1>送信データ一覧</h1>
+        <section>
+            <ul class="list_result">
+                <?= $str ?>
+            </ul>
+        </section>
+        <footer>
+            <a href="kadai_input.php" class="btn">入力画面へ戻る</a>
+        </footer>
 
-            </thead>
-            <tbody>
 
-            </tbody>
-        </table>
     </fieldset>
+
 </body>
 
 </html>
